@@ -2,7 +2,10 @@ spring:
   datasource:
     password: 1270apc16
     username: root
+    driver-class-name: com.mysql.jdbc.Driver
+    database-plataform: org.hibernate.dialect.MySQL8Dialect
     url: jdbc:mysql://localhost:3306/db_fornecedor?createDatabaseIfNotExist=true
   jpa:
+    generate-ddl: true
     hibernate:
       ddl-auto: update
